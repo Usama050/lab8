@@ -24,3 +24,8 @@
 nginx at the end is the name of the image you want to run the container from.
 
 ### 3. Verify that the web server is running and accessible from the local machine.
+
+
+![Alt text](lab8_2.png)
+
+
