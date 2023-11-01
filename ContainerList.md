@@ -32,3 +32,8 @@ f65254264b97   021283c8eb95                               "/docker-entrypoint.â€
 ### 2. Pull Latest Ubuntu Image:
 
 > docker pull ubuntu:latest
+
+
+![Alt text](lab8_1.png)
+
+
