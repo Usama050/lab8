@@ -37,3 +37,30 @@ f65254264b97   021283c8eb95                               "/docker-entrypoint.â€
 ![Alt text](lab8_1.png)
 
 
+### 3. Run Container:
+
+> docker run ubuntu:latest
+
+### 4. Remove Image:
+
+First collect the image ID by the following command: 
+
+> docker ps
+
+```sh
+3326db087c22   ubuntu:latest                              "/bin/bash"              About a minute ago   Running About a minute ago                                                                          relaxed_heisenberg
+```
+
+Then remove by following command:
+
+> docker rmi <your-image-id>
+
+In my case:
+
+> docker rmi 3326db087c22
+
+If the image you want to remove is currently being used by one or more containers, you might encounter an error stating that the image is in use. In that case, you can force the removal of the image by adding the -f or --force option to the command:
+
+> docker rmi -f 3326db087c22
+
+
