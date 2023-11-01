@@ -29,3 +29,36 @@ nginx at the end is the name of the image you want to run the container from.
 ![Alt text](lab8_2.png)
 
 
+
+## Create HTML File
+> docker cp index.html nginx_container:/usr/share/nginx/html/
+
+
+## Create Custom Image
+
+With the tag latest
+
+> docker commit nginx_container my_website:latest
+
+## Remove Original Container
+
+> docker rm nginx_container
+
+## Create New Container
+> docker commit nginx_container my_website:latest
+
+
+## Test Web Server
+
+> curl 127.0.0.1:80
+
+```sh
+<html>
+<head>
+<title>The best</title>
+</head>
+<body>
+<h1>website</h1>
+</body>
+</html>
+```
